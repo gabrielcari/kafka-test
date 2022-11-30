@@ -1,0 +1,20 @@
+{
+  "name": "kafka01",
+  "description": "Start Kafka and Zookeeper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Gabriel Cari",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start:consumer": "node ./index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "kafkajs": "^2.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
