@@ -10,6 +10,7 @@ Kafka is a messaging system that safely moves data between systems. Depending on
 
 **Consumer:** A client that reads data from one or more Kafka topics
 
+<img src="./kafka_example.png"/>
 
 ## Running example
 
@@ -48,9 +49,11 @@ sudo docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
 
 Topic is created in the Kafka container. Now we are gonna be able to use that topic from our producer such as our the producer.
 
-### 3. Run producer with **yarn start:producer** in kafka01/producer/
+### 3. Run producer 
+ - **yarn start:producer** in kafka01/producer/
 
-### 4. Run consumer with **yarn start:consumer** in kafka01/consumer/
+### 4. Run consumer
+- **yarn start:consumer** in kafka01/consumer/
 
 ### 5. Send a **POST** requestion to **http://localhost:3000** with any body content, for example:
 ```
@@ -59,3 +62,9 @@ Topic is created in the Kafka container. Now we are gonna be able to use that to
   "number": 23
 }
 ```
+
+##
+
+Consult the links bellow to know more about the package **kafkajs**:
+  - https://kafka.js.org/docs/introduction
+  - https://kafka.js.org/docs/getting-started
